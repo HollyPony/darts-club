@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+        id="io.liomka.darts-club"
+        version="0.0.0"
+        android-versionCode="1"
+        ios-CFBundleVersion="1"
+        xmlns="http://www.w3.org/ns/widgets">
+    <name>DARTS_CLUB_DEV</name>
+    <description>
+        Play Darts !
+    </description>
+    <author email="lab.mobilite@sqli.com" href="http://www.sqli.com">
+        SQLI Mobilite
+    </author>
+    <content src="index.html"/>
+    <engine name="android" spec="~4.1.1"/>
+    <engine name="ios" spec="~3.9.2"/>
+    <plugin name="cordova-plugin-device" spec="~1.0.1"/>
+    <plugin name="cordova-plugin-whitelist" spec="~1.0.0"/>
+    <plugin name="cordova-plugin-console" spec="~1.0.1"/>
+    <plugin name="cordova-plugin-splashscreen" spec="~2.1.0"/>
+    <plugin name="com.ionic.keyboard" spec="~1.0.4"/>
+    <plugin name="cordova-plugin-network-information" spec="~1.0.1"/>
+    <plugin name="cordova-plugin-geolocation" spec="~1.0.1" />
+    <plugin name="cordova-plugin-camera" spec="~1.2.0" />
+    <access origin="*"/>
+    <allow-intent href="http://*/*"/>
+    <allow-intent href="https://*/*"/>
+    <allow-intent href="tel:*"/>
+    <allow-intent href="sms:*"/>
+    <allow-intent href="mailto:*"/>
+    <allow-intent href="geo:*"/>
+    <preference name="Orientation" value="portrait"/>
+    <preference name="webviewbounce" value="false"/>
+    <preference name="UIWebViewBounce" value="false"/>
+    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="BackupWebStorage" value="none"/>
+    <preference name="SplashScreen" value="screen"/>
+    <preference name="SplashScreenDelay" value="1000"/>
+    <preference name="android-minSdkVersion" value="16"/>
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar"/>
+    </feature>
+    <platform name="android">
+        <allow-intent href="market:*"/>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*"/>
+        <allow-intent href="itms-apps:*"/>
+    </platform>
+</widget>
